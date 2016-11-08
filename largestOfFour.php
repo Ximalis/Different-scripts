@@ -1,7 +1,7 @@
 <?php
 
 function largestOfFour($arr) {
-    $max=[0][0];
+    $max=0;
     foreach($arr as $arr1){
         foreach($arr1 as $v){
             if($max<$v) {
