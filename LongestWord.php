@@ -9,7 +9,7 @@ function findLongestWord($str)
             $res = $v;
 
     }
-    echo 'Length of the longest word is ' .  strlen($res) . ' symbols';
+    return strlen($res);
 }
 
-findLongestWord("The quick brown fox jumped over the lazy dog");
+echo 'Length of the longest word is ' . findLongestWord("The quick brown fox jumped over the lazy dog") . ' symbols';

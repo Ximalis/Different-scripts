@@ -3,11 +3,11 @@
 function confirmEnding($str, $target){
     $last = $str{strlen($str)-1};
     if ($last == $target){
-        echo "Confirm";
+        return "Confirm";
     } else {
-        echo 'Not confirm';
+        return 'Not confirm';
     }
 
 }
 
-confirmEnding("Bastian", "n");
+echo confirmEnding("Bastian", "n");

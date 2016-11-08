@@ -5,8 +5,8 @@ function factorialize($num){
         for ($i=1; $i<=$num; $i++){
             $num2 *= $i;
         }
-    echo $num2;
+    return 'Factorial ' . $num . '=' . $num2;
 
 }
 
-factorialize(3);
+echo factorialize(3);

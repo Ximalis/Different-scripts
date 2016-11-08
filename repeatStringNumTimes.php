@@ -1,11 +1,13 @@
 <?php
 function repeatStringNumTimes($str, $times){
     if ($times < 0){
-        echo "<br>";
+        return '<br>';
     } else {
+        $num='';
         for ($i=0; $i<$times; $i++){
-            echo $str . "<br>";
+            $num .= $str. "<br>";
         }
+        return $num;
     }
 }
-repeatStringNumTimes("abc", 3);
+echo repeatStringNumTimes("abc", 3);
