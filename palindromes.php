@@ -19,10 +19,16 @@ function pal($str) {
         $str2 .= $str[$i];
     }
     if ($str2 == $str){
-        return "Word is palindrome ";
+        return true;
     } else {
-        return "Not palindrome" ;
+        return false ;
     }
 }
 
-echo '<h1>' . pal($str) . '</h1>';
+$res = pal($str);
+
+if ($res == true){
+    echo 'Word is palindrome';
+} else {
+    echo 'Not palindrome';
+}

@@ -1,12 +1,12 @@
 <?php
 
 function factorialize($num){
-    $num2 = 1;
+    $res = 1;
         for ($i=1; $i<=$num; $i++){
-            $num2 *= $i;
+            $res *= $i;
         }
-    return 'Factorial ' . $num . '=' . $num2;
+    return  $res;
 
 }
-
-echo factorialize(3);
+$num = 3;
+echo 'Factorial ' . $num . ' = ' . factorialize($num);
