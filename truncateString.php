@@ -1,4 +1,10 @@
 <?php
+
+/**
+ * Function Truncate a string (first argument) if it is longer than the given maximum string length (second argument).
+ * Return the truncated string with a ... ending.
+ */
+
 function truncateString($str, $str_length){
     if (mb_strlen($str) <= 3){
         return $str;

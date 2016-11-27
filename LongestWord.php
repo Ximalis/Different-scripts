@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Function return the length of the longest word in the provided sentence.
+ */
+
 function findLongestWord($str)
 {
     $str = explode(" ", $str);

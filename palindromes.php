@@ -1,4 +1,4 @@
-<form method="post" action="<?$_SERVER['PHP_SELF']?>" method="POST">
+<form method="post" action="<?$_SERVER['PHP_SELF']?>">
     <div>
         <label for="title">Enter word</label>
         <input name="title" id="title" autofocus />
@@ -6,7 +6,12 @@
     <input type="submit" name="submit" value="Добавить"/>
 </form>
 
+
 <?php
+
+/**
+ * Function return true if the given string is a palindrome. Otherwise, return false.
+ */
 
 $str = $_POST["title"];
 $str = preg_replace("|[^\d\w ]+|i","",$str);

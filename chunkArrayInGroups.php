@@ -1,8 +1,12 @@
 <?php
 
-    ///print_r(array_chunk($arr, $size));  стандартная ф-я
+/**
+ * Function splits an array (first argument) into groups the length of size (second argument).
+ * Return two-dimensional array.
+ */
 
 function chunkArrayInGroups($arr, $num){
+    //print_r(array_chunk($arr, $size));
     $cnt = count($arr) / $num;
     $r = array();
     $idx = 0;

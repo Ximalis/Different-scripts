@@ -1,5 +1,9 @@
 <?php
 
+/**
+ * Function return the factorial of the provided integer.
+ */
+
 function factorialize($num){
     $res = 1;
         for ($i=1; $i<=$num; $i++){
@@ -8,5 +12,7 @@ function factorialize($num){
     return  $res;
 
 }
+
 $num = 3;
+
 echo 'Factorial ' . $num . ' = ' . factorialize($num);
